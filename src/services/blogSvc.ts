@@ -7,7 +7,7 @@ export async function getBlogs() {
 	return await res.json();
 }
 
-export async function getBlogById(id: number) {
+export async function getBlogById(id: any) {
 	const res = await fetch(`https://basic-blog.teamrabbil.com/api/post-details/${id}`);
 	if (!res.ok) {
 		throw new Error('Error fetching posts');
