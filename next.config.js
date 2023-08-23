@@ -2,16 +2,7 @@
 const nextConfig = {
 	distDir: 'build',
 	images: {
-		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: 'tecdn.b-cdn.net'
-			},
-			{
-				protocol: 'https',
-				hostname: 'roar.media'
-			}
-		]
+		domains: ['tecdn.b-cdn.net', 'roar.media']
 	},
 	async headers() {
 		return [
