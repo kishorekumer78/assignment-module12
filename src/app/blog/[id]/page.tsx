@@ -10,7 +10,7 @@ export default async function SingleBlogPage({ params }: any) {
 			<div className="bg-base-200">
 				<div className=" flex align-top">
 					<Image
-						src={`${post?.postDetails.img}`}
+						src={`${post?.postDetails?.img}`}
 						width={300}
 						height={300}
 						className="rounded-lg shadow-2xl"
